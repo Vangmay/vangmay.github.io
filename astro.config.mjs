@@ -26,6 +26,7 @@ if (isBuild) {
   BASE_URL = LIVE_URL;
 }
 export default defineConfig({
-  site: 'https://vangmay.github.io',
-  base: '/my-repo',
+  server: { port: SERVER_PORT },
+  site: BASE_URL,
+  integrations: [sitemap()],
 });
