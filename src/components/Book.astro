@@ -1,0 +1,22 @@
+---
+import Heading from "./ui/Heading.astro";
+const {title, author, imagePath} = Astro.props; 
+---
+
+<div class="bookCard">
+    <Heading as="h1"class="">{title}</Heading>
+    <strong>{author}</strong>
+    <img src = {imagePath}/>
+</div>
+
+<style>
+    .bookCard{
+        display: flex;
+        border-color: rgb(255, 0, 0);
+        border-style: dashed solid 2px;
+    }
+    img {
+        widows: 100%;
+        height: 100%;
+    }
+</style>
