@@ -1,0 +1,40 @@
+---
+import Heading from "./ui/Heading.astro";
+import Book from "./Book.astro";
+import redBook from "/images/1984.jpg"
+import noLongerHuman from "/images/NoLongerHuman.jpeg"
+import kafka from "/images/KafkaOnTheShore.jpg"
+import algo from "/images/AlgosToLiveBy.jpg"
+import HistoryOfAI from "/images/HistoryOfAI.jpg"
+---
+
+<div class = "bookShelf">
+    <div class = "row">
+        <Book title = "1984" author = "George Orwell" imagePath = {redBook}/>
+        <Book title = "No Longer Human" author = "Ozamu Dazai" imagePath = {noLongerHuman}/>
+    </div>
+    <br>
+    <div class = "row">
+        <Book title = "Kafka on The shore" author = "Haruki Murakami" imagePath = {kafka}/>
+        <Book title = "Algorithms to Live by" author = "Brian Christian" imagePath = {algo}/>
+    </div>
+    <br>
+    <div class = "row">
+        <Book title = "A Brief History of Artificial Intelligence" author = "Michael Wooldridge" imagePath = {HistoryOfAI}/>
+    </div>
+    <br>
+</div>
+
+<style>
+    .row{
+        display: flex;
+        gap:10px;
+    }
+    @media screen and (max-width: 600px) {
+    .row {
+        display: block;
+
+    }
+    }
+
+</style>

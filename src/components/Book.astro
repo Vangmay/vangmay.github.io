@@ -4,19 +4,36 @@ const {title, author, imagePath} = Astro.props;
 ---
 
 <div class="bookCard">
-    <Heading as="h1"class="">{title}</Heading>
-    <strong>{author}</strong>
+    <div class = "wrapper">
+        <Heading as="h2"class="text">{title}</Heading>
+        <strong class=  "text">{author}</strong>
+    </div>
     <img src = {imagePath}/>
 </div>
 
 <style>
     .bookCard{
+        border-color: #dcdcdc;
+        border-width: 2px;
+        border-style: solid;
         display: flex;
-        border-color: rgb(255, 0, 0);
-        border-style: dashed solid 2px;
-    }
-    img {
-        widows: 100%;
+        gap: 30px;
+        width: fit-content;
+        padding:10px;
         height: 100%;
+        width: 100%;
+    }
+    img{
+        height: 150px;
+    }
+    .wrapper{
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        
+    }
+    .text{
+        font-family: "Inconsolata Variable", sans-serif;
+        font-size: 0.85rem;
     }
 </style>
