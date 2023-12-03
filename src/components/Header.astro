@@ -1,11 +1,12 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 import GitHubIcon from "../components/ui/icons/github.astro";
-import TwitterIcon from "../components/ui/icons/twitter.astro";
+import Heading from "./ui/Heading.astro";
 ---
 
 <header>
   <a class="skip-to-main" href="#main"> Skip to content</a>
+  <Heading class="name ">Vangmay Sachan</Heading>
   <nav>
     <section>
       <ul>
@@ -15,12 +16,7 @@ import TwitterIcon from "../components/ui/icons/twitter.astro";
     </section>
   </nav>
   <div class="social-handles">
-    <a
-      href="https://github.com/Vangmay"
-      aria-label="Vangmay on GitHub"
-    >
-      <GitHubIcon title="GitHub" />
-    </a>
+    
   </div>
 </header>
 <style>
@@ -54,7 +50,21 @@ import TwitterIcon from "../components/ui/icons/twitter.astro";
   nav ul > li {
     padding: 0;
   }
+  .name {
+    font-size: 2.5rem;
+    font-family: "Inconsolata Variable", sans-serif;
+    font-weight: 300;
+    margin: 0;
+    letter-spacing: -2px;
+    line-height: 3.5rem;
+    text-decoration: none;
+  }
+  @media (max-width: 480px) {
+    .name {
+      font-size: 1.5rem;
+    }
 
+  }
   .social-handles {
     display: flex;
     align-items: flex-end;

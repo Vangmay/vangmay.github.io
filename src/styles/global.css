@@ -39,7 +39,7 @@
 	--background: #ffffff;
 }
 
-/* ------ THEMING - Dark Mode ------ */
+/*------ THEMING - Dark Mode ------ */
 /* @media (prefers-color-scheme: dark) {
 	:root {
 		--palette-primary: #20bdff;
@@ -196,7 +196,7 @@ ul li {
 	background-image: linear-gradient(135deg, var(--gradient-text-from), var(--gradient-text-via), var(--gradient-text-to));
 }
 .highlight{
-	color:#d73974;
+	color:#ff005d;
 }
 
 /* 
