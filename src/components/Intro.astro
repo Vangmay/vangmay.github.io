@@ -19,6 +19,11 @@ import BookShelf from "./BookShelf.astro";
       I enjoy tackling projects that push me out of my comfort zone and serve as an opportunity to  learn new things! 
       I also enjoy teaching others about topics that I find interesting and discussing about them, so feel free to reach out 👋. 
     </p>
+    <ul>
+      <li>
+        <a  class = "animated"href = mailto:vangmay.sachan16@gmail.com>_MAIL</a>
+      </li>
+    </ul>
     <Heading as="h1"class="">About Me</Heading>
     <p>
       My love for computer science began when I encountered visual basics during classes in middle school 
@@ -94,28 +99,28 @@ import BookShelf from "./BookShelf.astro";
     <Heading as="h1"class="">Projects</Heading>
     <ul>
       <li>
-        <a href = "https://github.com/Vangmay/Sthaapna_org" target = "_blank">[Sthaapna.org] </a>: A website for a non-profit organization
+        <a class="animated" href = "https://github.com/Vangmay/Sthaapna_org" target = "_blank">[Sthaapna.org] </a>: A website for a non-profit organization
       </li>
       <li>
-        <a href = "https://github.com/Vangmay/Minima" target = "_blank">[Minima]</a>: A barebones online text editor
+        <a class="animated" href = "https://github.com/Vangmay/Minima" target = "_blank">[Minima]</a>: A barebones online text editor
       </li>
       <li>
-        <a href = "https://huggingface.co/spaces/Vangmayy/TheOfficeCharacters" target = "_blank">[CharacterClassification]</a>: A neural network that I trained using transfer learning to identify characters from my favourite sitcom “the office”
+        <a class="animated" href = "https://huggingface.co/spaces/Vangmayy/TheOfficeCharacters" target = "_blank">[CharacterClassification]</a>: A neural network that I trained using transfer learning to identify characters from my favourite sitcom “the office”
       </li>
     </ul>
     <Heading as="h4"class="">Random/Unsorted</Heading>
     <ul>
       <li>
-        <a href = "https://github.com/Vangmay/Character-Classification" target="_blank">[Another classification task]</a>: Trained a neural network on the CIFAR-10 dataset
+        <a class="animated" href = "https://github.com/Vangmay/Character-Classification" target="_blank">[Another classification task]</a>: Trained a neural network on the CIFAR-10 dataset
       </li>
       <li>
-        <a href = "https://github.com/Vangmay/Minimax-algorithm" target="_blank" >[Minimax Algorithm]</a> : Wrote the minimax algorithm for tic tac toe. 
+        <a class="animated" href = "https://github.com/Vangmay/Minimax-algorithm" target="_blank" >[Minimax Algorithm]</a> : Wrote the minimax algorithm for tic tac toe. 
       </li>
       <li>
         [The bridge and School newsletter]: Designed my school’s newsletter and magazine (More than 10 issues designed using Adobe InDesign)
       </li>
       <li>
-        <a href = "https://github.com/Vangmay/binary-pagesv2.0" target="_blank">[BinaryPages v2]<a/> : The predecessor of this website (Made using Chakra UI and Next.js)
+        <a class="animated" href = "https://github.com/Vangmay/binary-pagesv2.0" target="_blank">[BinaryPages v2]<a/> : The predecessor of this website (Made using Chakra UI and Next.js)
       </li>
       <li>
         [BinaryPages v1]: The predecessor of the predecessor of this website (Made using HTML/CSS and JS)
@@ -195,6 +200,9 @@ import BookShelf from "./BookShelf.astro";
     white-space: nowrap;
     overflow: auto;
   }
+  a:hover{
+    background: rgba(203, 203, 203, 0.524);
+  }
 
   @media (min-width: 640px) {
     .name {
@@ -207,5 +215,6 @@ import BookShelf from "./BookShelf.astro";
       line-height: 2rem;
       margin-top: 0.5rem;
     }
+
   }
 </style>

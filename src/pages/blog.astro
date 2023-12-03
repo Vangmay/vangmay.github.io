@@ -34,28 +34,40 @@ const sortedPosts = posts
             day: "numeric",
           });
           return (
+            
             <li class="post">
               <div class="title">
                 {post.frontmatter.external ? (
                   <a href={post.frontmatter.url} target="_blank">
-                    <span>{post.frontmatter.title}</span>
+                  <span>{post.frontmatter.title}</span>
+                  </a>
                     <ExternalLinkIcon
                       class="icon-realign"
                       title="Link to external post"
                       height={16}
                       width={16}
                     />
-                  </a>
+                    <div class="publish-date">
+                      <p class = "description">{post.frontmatter.description}</p>
+                      <time datetime={post.frontmatter.date.toISOString()}>
+                        {formattedDate}
+                      </time>
+                    </div>
                 ) : (
-                  <a href={`/blog/${post.slug}`}>{post.frontmatter.title}</a>
-                )}
-              </div>
-              <div class="publish-date">
-                <time datetime={post.frontmatter.date.toISOString()}>
-                  {formattedDate}
-                </time>
-              </div>
+                  <time datetime={post.frontmatter.date.toISOString()}>
+                    {formattedDate}
+                    </time>
+                    <a href={`/blog/${post.slug}`}>
+                    <h1>{post.frontmatter.title}</h1>
+                    </a>
+                    <div class="publish-date">
+                      <p class = "description">{post.frontmatter.description}</p>
+                    </div>
+                    
+                  )}
+                  </div>
             </li>
+            <br/>
           );
         })
       }
@@ -64,12 +76,20 @@ const sortedPosts = posts
 </PageLayout>
 
 <style>
+  .description{
+    font-family: "Inconsolata Variable";
+  }
   ul {
     list-style-type: none;
     padding: unset;
   }
 
+  a:hover{
+    text-decoration: underline;
+  }
+
   .post {
+    font-family: "IBM Plex Mono";
     display: grid;
     grid-template-columns: 1fr;
     line-height: 1.5;
@@ -86,13 +106,10 @@ const sortedPosts = posts
   }
 
   .title a {
-    color: var(--text);
+    color: var(--text-link);
     border-bottom: none;
   }
 
-  .title a:hover {
-    color: var(--text-link);
-  }
 
   .icon-realign {
     margin-bottom: -1.5px;

@@ -26,13 +26,13 @@
 :root {
 	--palette-primary: #4f46e5;
 
-	--text: #1e293b;
-	--text-muted: #64748b;
-	--text-heading: #0f172a;
-	--text-link: #2563eb;
+	--text: #000000;
+	--text-muted: #8a8a8a;
+	--text-heading: #000000;
+	--text-link: blue;
 
 	--code-background: #f6f7f9;
-	--code-text: #47546b;
+	--code-text: #000000;
 	--code-border: #e2e8f0;
 
 	--border: #e2e8f0;
@@ -40,7 +40,7 @@
 }
 
 /* ------ THEMING - Dark Mode ------ */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 	:root {
 		--palette-primary: #20bdff;
 
@@ -59,9 +59,9 @@
 	}
 
 	html {
-		color-scheme: dark;
+		color-scheme: light;
 	}
-}
+} */
 
 /* ------ GLOBAL STYLES - START ------ */
 
@@ -196,7 +196,7 @@ ul li {
 	background-image: linear-gradient(135deg, var(--gradient-text-from), var(--gradient-text-via), var(--gradient-text-to));
 }
 .highlight{
-	color:#ebbcba;
+	color:#d73974;
 }
 
 /* 
