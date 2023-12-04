@@ -40,7 +40,7 @@
 }
 
 /*------ THEMING - Dark Mode ------ */
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
 	:root {
 		--palette-primary: #20bdff;
 
@@ -61,7 +61,7 @@
 	html {
 		color-scheme: light;
 	}
-} */
+}
 
 /* ------ GLOBAL STYLES - START ------ */
 
