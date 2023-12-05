@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@astrojs/prism": "^1.0.2",
-    "@astrojs/rss": "^2.0.0",
+    "@astrojs/rss": "^2.4.4",
     "@astrojs/sitemap": "^1.0.0",
     "@fontsource/twinkle-star": "^5.0.17",
     "@markdoc/markdoc": "^0.2.1",
