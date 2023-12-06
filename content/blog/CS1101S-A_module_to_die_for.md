@@ -2,7 +2,7 @@
 external: false
 draft: false
 title: "My thoughts on CS1101S" 
-description: My thoughts on CS1101S, a module that I took in my first semester of university 
+description: Discussing a module that I took in my first semester of university 
 date: 2023-12-05
 ---
 During my first semester at National University of Singapore, My intro to programming module was "CS1101S: Programming Methodology I". I found this module to be the most challenging and rewarding experiences I have ever had. For me this is one of the most difficult "introductory" programming course that I had to go through ever.
