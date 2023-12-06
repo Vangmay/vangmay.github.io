@@ -1,7 +1,7 @@
 ---
 external: false
 draft: false
-title: "CS1101S: A module to die for" 
+title: "My thoughts on CS1101S" 
 description: My thoughts on CS1101S, a module that I took in my first semester of university 
 date: 2023-12-05
 ---
