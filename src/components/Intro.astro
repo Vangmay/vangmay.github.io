@@ -3,264 +3,365 @@ import Heading from "./ui/Heading.astro";
 import myImage from "/images/main.gif";
 import WorkshopImage from "/images/CDLKO.png";
 import CDBLR from "/images/CDBLR.jpg";
-import Book from "./Book.astro";
-import redBook from "/images/1984.jpg"
 import BookShelf from "./BookShelf.astro";
 ---
 
 <section class="wrapper">
-  <img src = {myImage} class="mainGif"/>
-  <div class = "BodyWrapper">
-    <p > 
-      Hello, I am Vangmay (Waang-maye), an undergraduate student at National University of Singapore. 
-      Welcome to my <span class="highlight">digital homepage</span>. 
-      I like to learn new things in the field of computing and often dive 
-      into a deep rabbit hole to learn more about different concepts so 
-      I made this website to allow me to share some of these things. 
-      I enjoy tackling projects that push me out of my comfort zone and serve as an opportunity to learn new things! 
-      I also enjoy teaching others about topics that I find interesting and discussing about them, so feel free to reach out 👋. 
+  <img src={myImage} class="mainGif" />
+  <div class="BodyWrapper">
+    <p>
+      Hello, I am Vangmay (Waang-maye), an undergraduate student at National
+      University of Singapore. Welcome to my <span class="highlight"
+        >digital homepage</span
+      >. I like to learn new things in the field of computing and often dive
+      into a deep rabbit hole to learn more about different concepts so I made
+      this website to allow me to share some of these things. I enjoy tackling
+      projects that push me out of my comfort zone and serve as an opportunity
+      to learn new things! I also enjoy teaching others about topics that I find
+      interesting and discussing about them, so feel free to reach out 👋.
     </p>
     <ul>
       <li>
-        <a  class = "animated" target = "_blank" href = "https://letterboxd.com/Vangmayy/">Letterboxd</a>
+        <a class="animated" target="_blank" href="https://github.com/Vangmay"
+          >Github</a
+        >
       </li>
       <li>
-        <a  class = "animated" target = "_blank" href = "https://open.spotify.com/user/mxplgzjkbde14xy287dj2et1m?si=33d22c02308d46ec">Spotify</a>
+        <a
+          class="animated"
+          target="_blank"
+          href="https://letterboxd.com/Vangmayy/">Letterboxd</a
+        >
       </li>
       <li>
-        <a  class = "animated" target = "_blank" href = mailto:vangmay.sachan16@gmail.com>Mail</a>
+        <a
+          class="animated"
+          target="_blank"
+          href="https://open.spotify.com/user/mxplgzjkbde14xy287dj2et1m?si=33d22c02308d46ec"
+          >Spotify</a
+        >
       </li>
       <li>
-        <a  class = "animated" target = "_blank" href = "https://github.com/Vangmay">Github</a>
-      </li>
-      <li>
-        <a  class = "animated" target = "_blank" href = "./rss.xml">RSS feed</a>
-      </li>
-    </ul>
-    <Heading as="h1"class="">About Me</Heading>
-    <p>
-      My love for computer science began when I encountered visual basics during classes in middle school 
-      and started tinkering around with it and making random projects like quizzes,games using the software. 
-      I started to dive deep inside the rabbit hole of programming, computer science and artificial intelligence. 
-      What I love the most about the subject is its ability of simulate intelligence using mathematics. 
-      I also admire how well computer science is able to work with other disciplines to solve domain specific problems. 
-    </p>
-    <Heading as="h1"class="">Programming</Heading>
-    <p>
-      I like to spend my time writing code and getting to learn new things.  
-      My favourite programming language is <a class="animated" href = "https://www.python.org/">Python</a>, majorly 
-      because of how convenient it is to use libraries such as <a class = "animated" href = "https://pytorch.org/">Pytorch</a> and <a class = "animated" href = "https://www.tensorflow.org">TensorFlow</a>. 
-      I enjoy working with Javascript, <a class = "animated" href = "https://nextjs.org/">Next.Js</a> is my go-to 
-      framework because of its features such as dynamic routing. 
-    </p>  
-    <p>
-      Besides that, I like to try out different programming languages which has 
-      led me to be familiar with alot of them like 
-      <span class="highlight"> Java, C, C++, Haskell and OCaml </span>. 
-      Besides that, I also try out different domains of programming such as Frontend, Backend, Artificial Intelligence and Compiler Development. 
-      I love to break open modern abstractions and figure out how things works underneath the syntactic sugar. 
-    </p>
-    <Heading as="h1"class="">Teaching and Hackathons</Heading>
-    <p>
-      Before leaving for University, I helped organise the first high-schooler-led hackathon in my city, 
-      CodeDay Lucknow. It was pretty cool. I got to mentor people for workshops and also conduct one myself. 
-    </p>
-    <p>
-      Photo of me giving a workshop 
-      <img src = {WorkshopImage}/>
-    </p>
-    <p>
-      Later on, I flew to Bengluru to participate in CodeDay Bengluru.  
-      It was a fun experience, I pulled off my third all-nighter and also conducted a workshop on AI to 
-      help attendees understand when it means when we talk about "Training a neural network".  
-      <img src = {CDBLR}/>
-    </p>
-    <Heading as="h1"class="">Books and Movies</Heading>
-    <p> 
-      Many of my favourite films are by the filmmaker Wes Anderson, for me his films are an escape from reality. 
-      I really like his style of bright colours and also the comedic feel it brings into his stories. 
-      Some of my favourite films are <a class="animated" href = "https://www.imdb.com/title/tt14039582/">Drive my car</a>, <a class = "animated" href = "https://www.imdb.com/title/tt0099685/">Goodfellas</a>, <a class = "animated" href = "https://www.imdb.com/title/tt9243804/">The green knight</a> and Star Wars (Sequel and Prequel triologies)</a>. 
-      The book I read are sometimes fiction, sometimes Science and also philosophy. 
-      Currently I am reading <span class="highlight"> Crime and Punishment by Fyodor Dostovesky </span>.  
-      <!-- <Book title = "1984" author = "George Orwell" imagePath = {redBook} /> -->
-    </p>
-    <p>
-
-      <strong>Here are books I recommend</strong>
-      <BookShelf/>
-    </p>
-
-      <strong>Special Mention</strong>
-      Discrete mathematics with applications By Susanna S. Epp (Helped me go through Discrete mathematics 10/10 fully recommended)
-    
-    <ul>
-      <strong>Books in my reading list</strong>
-      <li>Gödel, Escher, Bach: An Eternal Golden Braid</li>
-      <li>How to Solve It</li>
-      <li>Crime and punishment</li>
-
-    </ul>
-    <Heading as="h1"class="">Current</Heading>
-    <p>
-      Currently I am:
-      <ul>
-        <li>Enjoying the summer :)</li>
-        <li>Participating in <a href = "https://buildspace.so/">Buildspace</a> nights and weekends s5 </li>
-        <li>Working on my first research project</li>
-        <li>Organizing CodeDay Lucknow (Yup, we're back!)</li>
-        <li>Completing Fast AI course part 2</li>
-        <li>Grinding leetcode 💪</li>
-      </ul>
-    </p>
-    <Heading as="h1"class="">Other stuff</Heading>
-    <p>I recently discovered the world of bouldering and rock climbing, ever since then I have been highly interested in the sport and hit the climbing gyms quite often</p>
-    <p>
-      I enjoy playing chess, currently I am rated 978 in <a href = "chess.com">chess.com</a>   
-      I did kendo this year and found it to be super fun. Also this year, I experienced the taste of 5 different cuisines, 
-      attended my first concert and learned how to play mahjong and now I enjoy playing it with friends :)  
-    </p>
-
-    
-    
-    <Heading as="h1"class="">Projects</Heading>
-    <ul>
-      <li>
-        <a class="animated" href = "https://huggingface.co/spaces/Vangmayy/Bollywood-gpt" target = "_blank">[Bollywood-GPT] </a>: I fine tuned a GPT-2 model on a corpus of bollywood movies so that when I provide it genres, the model is able to generate summaries of new movies and also recommend suitable actors and titles for the project. 
-      </li>
-      <li>
-        <a class="animated" href = "https://github.com/Vangmay/Sthaapna_org" target = "_blank">[Sthaapna.org] </a>: A website for a non-profit organization
-      </li>
-      <li>
-        <a class="animated" href = "https://github.com/Vangmay/Minima" target = "_blank">[Minima]</a>: A barebones online text editor
-      </li>
-      <li>
-        <a class="animated" href = "https://huggingface.co/spaces/Vangmayy/TheOfficeCharacters" target = "_blank">[CharacterClassification]</a>: A neural network that I trained using transfer learning to identify characters from my favourite sitcom “the office”
+        <a
+          class="animated"
+          target="_blank"
+          href="mailto:vangmay.sachan16@gmail.com">Mail</a
+        >
       </li>
     </ul>
-    <Heading as="h4"class="">Random/Unsorted</Heading>
-    <ul>
-      <li>
-        <a class="animated" href = "https://github.com/Vangmay/Character-Classification" target="_blank">[Another classification task]</a>: Trained a neural network on the CIFAR-10 dataset
-      </li>
-      <li>
-        <a class="animated" href = "https://github.com/Vangmay/Minimax-algorithm" target="_blank" >[Minimax Algorithm]</a> : Wrote the minimax algorithm for tic tac toe. 
-      </li>
-      <li>
-        [The bridge and School newsletter]: Designed my school’s newsletter and magazine (More than 10 issues designed using Adobe InDesign)
-      </li>
-      <li>
-        [Computer Science club]: Conducted workshops on AI, web development and programming langauges at my school (I love to teach)
-      </li>
-      <li>
-        <a class="animated" href = "https://binary-pagesv2-0-7iek-vangmay.vercel.app/" target="_blank">[BinaryPages v2]<a/> : The predecessor of this website (Made using Chakra UI and Next.js)
-        </li>
-        <li>
-          [BinaryPages v1]: The predecessor of the predecessor of this website (Made using HTML/CSS and JS)
-        </li>
-      </ul>
-      
-      <Heading as="h1"class="">Design inspirations</Heading>
-      <p>These websites are what I used as the design inspiration to mine.</p>
-      <ul>
-        <li>
-          <a class="animated" href = "https://kognise.dev/" target="_blank">Kognise.dev<a/>
-        </li>
-          
-          
-        <li>
-          <a class="animated" href = "https://www.cl.cam.ac.uk/~fms27/" target="_blank">Frank Stajano's Things<a/>
-        </li>
-    </ul>
+    <Heading as="h1" class="">About Me</Heading>
+    <p>
+      My love for computer science began when I encountered visual basics during
+      classes in middle school and started tinkering around with it and making
+      random projects like quizzes,games using the software. I started to dive
+      deep inside the rabbit hole of programming, computer science and
+      artificial intelligence. What I love the most about the subject is its
+      ability of simulate intelligence using mathematics. I also admire how well
+      computer science is able to work with other disciplines to solve domain
+      specific problems.
+    </p>
+    <Heading as="h1" class="">Programming</Heading>
+    <p>
+      I like to spend my time writing code and getting to learn new things. My
+      favourite programming language is <a
+        class="animated"
+        target="_blank"
+        href="https://www.python.org/">Python</a
+      >, majorly because of how convenient it is to use libraries such as <a
+        class="animated"
+        target="_blank"
+        href="https://pytorch.org/">Pytorch</a
+      > and <a
+        class="animated"
+        target="_blank"
+        href="https://www.tensorflow.org">TensorFlow</a
+      >. I enjoy working with Javascript, <a
+        class="animated"
+        target="_blank"
+        href="https://nextjs.org/">Next.Js</a
+      > is my go-to framework because of its features such as dynamic routing.
+    </p>
+    <p>
+      Besides that, I like to try out different programming languages which has
+      led me to be familiar with alot of them like
+      <span class="highlight"> Java, C, and C++ </span>. Besides that, I also
+      try out different domains of programming such as Frontend, Backend,
+      Artificial Intelligence and Game Development. I love to break open modern
+      abstractions and figure out how things works underneath the syntactic
+      sugar.
+    </p>
+    <Heading as="h1" class="">Teaching and Hackathons</Heading>
+    <p>
+      Before leaving for University, I helped organise the first
+      high-schooler-led hackathon in my city, CodeDay Lucknow. It was pretty
+      cool. I got to mentor people for workshops and also conduct one myself.
+    </p>
+    <p>
+      Photo of me giving a workshop
+      <img src={WorkshopImage} />
+    </p>
+    <p>
+      Later on, I flew to Bengluru to participate in CodeDay Bengluru. It was a
+      fun experience, I pulled off my third all-nighter and also conducted a
+      workshop on AI to help attendees understand when it means when we talk
+      about "Training a neural network".
+      <img src={CDBLR} />
+    </p>
+    <Heading as="h1" class="">Books and Movies</Heading>
+    <p>
+      Many of my favourite films are by the filmmaker Wes Anderson, for me his
+      films are an escape from reality. I really like his style of bright
+      colours and also the comedic feel it brings into his stories. Some of my
+      favourite films are <a
+        class="animated"
+        target="_blank"
+        href="https://www.imdb.com/title/tt14039582/">Drive my car</a
+      >, <a class="animated" href="https://www.imdb.com/title/tt0099685/"
+        >Goodfellas</a
+      >, <a class="animated" href="https://www.imdb.com/title/tt9243804/"
+        >The green knight</a
+      > and Star Wars (Sequel and Prequel triologies) Fun fact about me: I once made
+      a short film back in 8th grade along with me my friends. <a
+        class="animated"
+        target="_blank"
+        href="https://www.youtube.com/watch?v=e8imAhMS2vU"
+        >Feel free to watch :)</a
+      >
+    </p>
+    <p>
+      I also enjoy reading books. Recently, I have been reading alot of
+      philosophy.
+    </p>
+    <!-- Currently I am reading <span class="highlight">
+      Crime and Punishment by Fyodor Dostovesky
+    </span>. -->
   </div>
-  
+  <p>
+    <strong>Here are books I recommend</strong>
+    <BookShelf />
+  </p>
+
+  <strong>Special Mention</strong>
+  Discrete mathematics with applications By Susanna S. Epp (Helped me go through
+  Discrete mathematics 10/10 fully recommended)
+
+  <ul>
+    <strong>Books in my reading list</strong>
+    <li>Gödel, Escher, Bach: An Eternal Golden Braid</li>
+    <li>How to Solve It</li>
+    <li>Crime and punishment</li>
+  </ul>
+  <Heading as="h1" class="">Current</Heading>
+  <p>
+    Currently I am:
+    <ul>
+      <li>In Year 2 of my university life</li>
+      <li>Working on a survey paper about MLLM hallucinations</li>
+      <li>Looking for interships</li>
+      <li>
+        Learning how to <a
+          class="animated"
+          target="_blank"
+          href="https://fullstackopen.com/">develop full stack web apps</a
+        >
+      </li>
+    </ul>
+  </p>
+  <Heading as="h1" class="">Other stuff</Heading>
+  <p>
+    I recently discovered the world of bouldering and rock climbing, ever since
+    then I have been highly interested in the sport and hit the climbing gyms
+    quite often
+  </p>
+  <p>
+    I enjoy playing chess, currently I am rated 978 in <a href="chess.com"
+      >chess.com</a
+    >
+    I did kendo last year and found it to be super fun. I experienced the taste of
+    5 different cuisines, attended my first concert and learned how to play mahjong
+    and now I enjoy playing it with friends :)
+  </p>
+
+  <Heading as="h1" class="">Projects</Heading>
+  <ul>
+    <li>
+      <a
+        class="animated"
+        href="https://huggingface.co/spaces/Vangmayy/Bollywood-gpt"
+        target="_blank"
+        >[Bollywood-GPT]
+      </a>: I fine tuned a GPT-2 model on a corpus of bollywood movies so that
+      when I provide it genres, the model is able to generate summaries of new
+      movies and also recommend suitable actors and titles for the project.
+    </li>
+    <li>
+      <a
+        class="animated"
+        href="https://github.com/Vangmay/Sthaapna_org"
+        target="_blank"
+        >[Sthaapna.org]
+      </a>: A website for a non-profit organization
+    </li>
+    <li>
+      <a
+        class="animated"
+        href="https://github.com/Vangmay/Minima"
+        target="_blank">[Minima]</a
+      >: A barebones online text editor
+    </li>
+    <li>
+      <a
+        class="animated"
+        href="https://huggingface.co/spaces/Vangmayy/TheOfficeCharacters"
+        target="_blank">[CharacterClassification]</a
+      >: A neural network that I trained using transfer learning to identify
+      characters from my favourite sitcom “the office”
+    </li>
+  </ul>
+  <Heading as="h4" class="">Random/Unsorted</Heading>
+  <ul>
+    <li>
+      <a
+        class="animated"
+        href="https://github.com/Vangmay/Character-Classification"
+        target="_blank">[Another classification task]</a
+      >: Trained a neural network on the CIFAR-10 dataset
+    </li>
+    <li>
+      <a
+        class="animated"
+        href="https://github.com/Vangmay/Minimax-algorithm"
+        target="_blank">[Minimax Algorithm]</a
+      > : Wrote the minimax algorithm for tic tac toe.
+    </li>
+    <li>
+      [The bridge and School newsletter]: Designed my school’s newsletter and
+      magazine (More than 10 issues designed using Adobe InDesign)
+    </li>
+    <li>
+      [Computer Science club]: Conducted workshops on AI, web development and
+      programming langauges at my school (I love to teach)
+    </li>
+    <li>
+      <a
+        class="animated"
+        href="https://binary-pagesv2-0-7iek-vangmay.vercel.app/"
+        target="_blank"
+        >[BinaryPages v2]<a></a> : The predecessor of this website (Made using Chakra
+        UI and Next.js)
+      </a>
+      <li>
+        [BinaryPages v1]: The predecessor of the predecessor of this website
+        (Made using HTML/CSS and JS)
+      </li>
+    </li>
+
+    <Heading as="h1" class="">Design inspirations</Heading>
+    <p>These websites are what I used as the design inspiration to mine.</p>
+    <ul>
+      <li>
+        <a class="animated" href="https://kognise.dev/" target="_blank"
+          >Kognise.dev<a></a>
+        </a>
+
+        <li>
+          <a
+            class="animated"
+            href="https://www.cl.cam.ac.uk/~fms27/"
+            target="_blank"
+            >Frank Stajano's Things<a></a>
+          </a>
+        </li>
+      </li>
+    </ul>
+
+    <style>
+      p {
+        font-family: "Inconsolata Variable";
+      }
+      .BodyWrapper {
+        padding: 1.5rem;
+      }
+      .wrapper {
+        display: block;
+      }
+      .mainGif {
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        width: min(700px, 100%);
+        z-index: -1;
+        opacity: 0.3;
+      }
+      .wrapper {
+        padding-top: 2rem;
+        /* padding-bottom: 1rem; */
+      }
+
+      .outline {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 0.075rem var(--outline-color);
+      }
+
+      .gradient-color {
+        --gradient-text-from: #5433ff;
+        --gradient-text-via: #20bdff;
+        --gradient-text-to: #a5fecb;
+      }
+
+      .outline-color {
+        --outline-color: var(--text-heading);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .gradient-color {
+          --gradient-text-from: #a5fecb;
+          --gradient-text-via: #20bdff;
+          --gradient-text-to: #a5fecb;
+        }
+        .outline-color {
+          --outline-color: transparent;
+        }
+      }
+
+      .name {
+        font-size: 3rem;
+        font-family: "Inconsolata Variable", sans-serif;
+        font-weight: 300;
+        margin: 0;
+        letter-spacing: -2px;
+        line-height: 3.5rem;
+      }
+
+      .subtext {
+        color: var(--text-heading);
+        font-size: 1.25rem;
+        letter-spacing: -0.51px;
+        line-height: 2rem;
+        margin-top: 0.5rem;
+      }
+
+      .cli-command {
+        text-align: center;
+        white-space: nowrap;
+        overflow: auto;
+      }
+      a:hover {
+        background: rgba(203, 203, 203, 0.524);
+      }
+
+      @media (min-width: 640px) {
+        .name {
+          font-size: 4rem;
+          line-height: 4.75rem;
+        }
+        .subtext {
+          font-size: 1.5rem;
+          letter-spacing: -0.51px;
+          line-height: 2rem;
+          margin-top: 0.5rem;
+        }
+      }
+    </style>
+  </ul>
 </section>
-
-<style>
-  p{
-    font-family: "Inconsolata Variable";
-  }
-  .BodyWrapper{
-    padding: 1.5rem;
-  }
-  .wrapper{
-    display: block;
-  }
-  .mainGif{
-    display: block;
-    box-sizing: border-box;
-    position: absolute;
-    width: min(700px,100%);
-    z-index: -1;
-    opacity: .3;
-  }
-  .wrapper {
-    padding-top: 2rem;
-    /* padding-bottom: 1rem; */
-  }
-
-  .outline {
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0.075rem var(--outline-color);
-  }
-
-  .gradient-color {
-    --gradient-text-from: #5433ff;
-    --gradient-text-via: #20bdff;
-    --gradient-text-to: #a5fecb;
-  }
-
-  .outline-color {
-    --outline-color: var(--text-heading);
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .gradient-color {
-      --gradient-text-from: #a5fecb;
-      --gradient-text-via: #20bdff;
-      --gradient-text-to: #a5fecb;
-    }
-    .outline-color {
-      --outline-color: transparent;
-    }
-  }
-
-  .name {
-    font-size: 3rem;
-    font-family: "Inconsolata Variable", sans-serif;
-    font-weight: 300;
-    margin: 0;
-    letter-spacing: -2px;
-    line-height: 3.5rem;
-  }
-
-  .subtext {
-    color: var(--text-heading);
-    font-size: 1.25rem;
-    letter-spacing: -0.51px;
-    line-height: 2rem;
-    margin-top: 0.5rem;
-  }
-
-  .cli-command {
-    text-align: center;
-    white-space: nowrap;
-    overflow: auto;
-  }
-  a:hover{
-    background: rgba(203, 203, 203, 0.524);
-  }
-
-  @media (min-width: 640px) {
-    .name {
-      font-size: 4rem;
-      line-height: 4.75rem;
-    }
-    .subtext {
-      font-size: 1.5rem;
-      letter-spacing: -0.51px;
-      line-height: 2rem;
-      margin-top: 0.5rem;
-    }
-
-  }
-</style>
